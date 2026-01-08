@@ -1,6 +1,6 @@
 #  React Clean Task Manager
 
-> Um gerenciador de tarefas minimalista, focado em design clean, usabilidade fluida e persistência de dados.
+> Um gerenciador de tarefas minimalista, focado em design clean e usabilidade fluida.
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -26,7 +26,7 @@
 
 Este é um projeto de portfólio desenvolvido como uma **Single Page Application (SPA)** utilizando o ecossistema React.
 
-O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do List" básico, implementando **persistência de dados (LocalStorage)**, **filtros complexos** e um **sistema de design hierárquico** para evitar fadiga visual.
+O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do List" básico, implementando **filtros complexos** e um **sistema de design hierárquico** para evitar fadiga visual.
 
 ###  Destaques Técnicos
 * **Arquitetura de Componentes:** Código modular e reutilizável (`Todo`, `TodoForm`, `Search`, `Filter`).
@@ -41,7 +41,6 @@ O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do L
 | Funcionalidade | Descrição |
 | :--- | :--- |
 | **✅ CRUD Completo** | Adicionar, Ler, Atualizar e Remover tarefas dinamicamente. |
-| **💾 Persistência** | As tarefas são salvas no **LocalStorage** do navegador e não somem ao atualizar a página. |
 | **🔍 Busca (Search)** | Filtragem em tempo real de tarefas pelo título. |
 | **📂 Categorização** | Classificação por tags (Trabalho, Pessoal, Estudos, etc). |
 | **📊 Filtros Avançados** | Visualização por status: *Todas*, *Completas* ou *Incompletas*. |
@@ -59,12 +58,20 @@ Se você deseja testar o código na sua máquina:
    git clone https://github.com/MatheusAraj/simple-todo-list.git
    ```
 2. **Entre na pasta do projeto** 
-   ```cd simple-todo-list```
+   ```
+   cd simple-todo-list
+   ```
 3. **Instale as dependências**
-   ```npm install```
+   ```
+   npm install
+   ```
 4. **Execute o servidor de desenvolvimento**
-  ``` npm run dev```
+   ```
+   npm run dev
+   ```
 5. **Acesse no navegador O terminal irá mostrar o link local.**
-  ``` (geralmente http://127.0.0.1:5173/). ```
+   ``` 
+   (geralmente http://127.0.0.1:5173/).
+   ```
 
 <div align="center"> <p>Desenvolvido por <a href="https://github.com/MatheusAraj">Matheus Araujo</a></p> </div>
