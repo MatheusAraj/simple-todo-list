@@ -1,4 +1,4 @@
-# 📝 React Clean Task Manager
+#  React Clean Task Manager
 
 > Um gerenciador de tarefas minimalista, focado em design clean, usabilidade fluida e persistência de dados.
 
@@ -13,22 +13,22 @@
 
 <div align="center">
   <h3>
-    👇 CLIQUE ABAIXO PARA VER O PROJETO RODANDO 👇
+     CLIQUE ABAIXO PARA VER O PROJETO RODANDO 
   </h3>
   <h2>
-    🚀 <a href="COLE_O_SEU_LINK_DA_VERCEL_AQUI" target="_blank">CLIQUE AQUI PARA TESTAR A APLICAÇÃO</a> 🚀
+     <a href="https://simple-todo-list-8n2q.vercel.app" target="_blank">CLIQUE AQUI PARA TESTAR A APLICAÇÃO</a> 
   </h2>
 </div>
 
 ---
 
-## 💻 Sobre o Projeto
+##  Sobre o Projeto
 
 Este é um projeto de portfólio desenvolvido como uma **Single Page Application (SPA)** utilizando o ecossistema React.
 
 O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do List" básico, implementando **persistência de dados (LocalStorage)**, **filtros complexos** e um **sistema de design hierárquico** para evitar fadiga visual.
 
-### 🎯 Destaques Técnicos
+###  Destaques Técnicos
 * **Arquitetura de Componentes:** Código modular e reutilizável (`Todo`, `TodoForm`, `Search`, `Filter`).
 * **React Hooks:** Uso avançado de `useState` para gerenciamento de estado e `useEffect` para efeitos colaterais (persistência).
 * **Imutabilidade:** Manipulação segura de arrays e objetos de estado.
@@ -36,7 +36,7 @@ O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do L
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 | Funcionalidade | Descrição |
 | :--- | :--- |
@@ -50,7 +50,7 @@ O objetivo principal foi criar uma aplicação robusta que vai além do "To-Do L
 
 ---
 
-## 📦 Como rodar este projeto localmente
+##  Como rodar este projeto localmente
 
 Se você deseja testar o código na sua máquina:
 
