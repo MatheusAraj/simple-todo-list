@@ -1,149 +1,143 @@
 # React Clean Task Manager
 
-> Modern task management application built with React, featuring advanced filtering, state management, and a minimalist design system.
+> High-performance Single Page Application (SPA) for task management, developed with React and Vite, focused on modular design principles and immutable state management.
 
 <div align="center">
-  
+
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
   ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
   ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-  ### [🚀 Live Demo](https://simple-todo-list-8n2q.vercel.app)
+  ### [Access the demo (Live Demo)](https://simple-todo-list-8n2q.vercel.app)
 
 </div>
 
 ---
 
-## 📋 Overview
+## Overview
 
-A production-ready Single Page Application (SPA) demonstrating modern React development practices. This project goes beyond traditional to-do lists by implementing sophisticated filtering logic, optimized state management, and a scalable component architecture.
+This project is a robust application that demonstrates contemporary frontend development practices. The implementation focuses on scalable component architecture, complex filtering logic, and optimized data flow.
 
-### Key Technical Highlights
+### Architecture and Engineering
 
-- **Component Architecture**: Modular, reusable component design (`Todo`, `TodoForm`, `Search`, `Filter`)
-- **State Management**: Advanced `useState` patterns with immutable state updates
-- **Design System**: CSS custom properties for consistent theming and maintainability
-- **Performance**: Optimized re-renders and efficient data filtering algorithms
-
----
-
-## ⚙️ Features
-
-| Feature | Implementation |
-|---------|---------------|
-| **CRUD Operations** | Full create, read, update, and delete functionality with real-time UI updates |
-| **Real-time Search** | Instant task filtering with debounced input handling |
-| **Category System** | Tag-based organization (Work, Personal, Study, etc.) |
-| **Advanced Filters** | Multi-criteria filtering: All, Completed, or Pending tasks |
-| **Dynamic Sorting** | Alphabetical ordering (A-Z / Z-A) with case-insensitive comparison |
-| **Responsive Design** | Mobile-first approach with breakpoint optimization |
+- **Modularization**: Strict separation of responsibilities between UI components (`Todo`, `TodoForm`) and control logic (`Search`, `Filter`).
+- **State Management**: Strategic use of React Hooks for handling global and local states, ensuring data persistence and integrity throughout the application lifecycle.
+- **Styling Systems**: Implementation of CSS Custom Properties (CSS Variables) to ensure visual consistency and facilitate theme maintenance.
+- **Filtering Algorithms**: Optimized array processing logic, enabling real-time search and sorting with low latency.
 
 ---
 
-## 🛠️ Tech Stack
+## Technical Features
 
-```
-Frontend Framework:  React 18
-Build Tool:          Vite
-Styling:             CSS3 (Custom Properties)
-State Management:    React Hooks (useState)
-Deployment:          Vercel
-Version Control:     Git
-```
+| Module | Technical Description |
+|---------|----------------------|
+| **CRUD Operations** | Real-time state persistence with reactive UI updates. |
+| **Search Engine** | Dynamic string filtering integrated into the rendering flow. |
+| **Category Taxonomy** | Tag-based system for semantic task classification (Work, Personal, Studies). |
+| **Multi-criteria Filtering** | Conditional logic implementation for states: "All", "Completed", and "Pending". |
+| **Data Sorting** | Alphabetical sorting algorithms (ASC/DESC) with case-insensitivity handling. |
+| **Responsive Design** | Architecture based on Media Queries and Flexbox for cross-device compatibility. |
 
 ---
 
-## 🚀 Getting Started
+## Technology Stack
+
+- **Core**: React 18
+- **Build Tooling**: Vite
+- **Styling Engine**: CSS3 (Modular)
+- **State Management**: Functional Components & Hooks
+- **Deployment**: Vercel CI/CD
+- **Version Control**: Git
+
+---
+
+## Environment Setup
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (Runtime environment v16.0.0+)
 - npm or yarn package manager
 
-### Installation
+### Installation Procedure
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MatheusAraj/simple-todo-list.git
-   ```
+1. **Repository cloning**
 
-2. **Navigate to project directory**
-   ```bash
-   cd simple-todo-list
-   ```
+```bash
+git clone https://github.com/MatheusAraj/simple-todo-list.git
 
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
+```
 
-4. **Start development server**
-   ```bash
-   npm run dev
-   ```
+2. **Directory navigation**
 
-5. **Access the application**
-   
-   Open your browser and navigate to URL displayed in your terminal
+```bash
+cd simple-todo-list
 
-### Build for Production
+```
+
+3. **Dependency installation**
+
+```bash
+npm install
+
+```
+
+4. **Run development environment**
+
+```bash
+npm run dev
+
+```
+
+### Deployment (Production Build)
+
+To generate optimized production artifacts in the `/dist` directory:
 
 ```bash
 npm run build
-```
 
-The optimized production build will be generated in the `dist/` directory.
+```
 
 ---
 
-## 📁 Project Structure
+## Directory Structure
 
-```
+```text
 simple-todo-list/
 ├── src/
-│   ├── components/
-│   │   ├── Todo.jsx
-│   │   ├── TodoForm.jsx
-│   │   ├── Search.jsx
-│   │   └── Filter.jsx
-│   ├── App.jsx
-│   ├── App.css
-│   └── main.jsx
-├── public/
-├── package.json
-└── vite.config.js
+│   ├── components/       # Reusable UI components
+│   │   ├── Todo.jsx      # Individual task item
+│   │   ├── TodoForm.jsx  # Creation logic
+│   │   ├── Search.jsx    # Search component
+│   │   └── Filter.jsx    # Filtering and sorting logic
+│   ├── App.jsx           # Root component and state orchestrator
+│   ├── App.css           # Global definitions and variables
+│   └── main.jsx          # Application entry point
+├── package.json          # Project manifest and scripts
+└── vite.config.js        # Bundler configuration
+
 ```
 
 ---
 
-## 💡 Development Approach
+## Development Principles
 
-This project emphasizes:
+The application was structured following these guidelines:
 
-- **Clean Code Principles**: Readable, maintainable, and self-documenting code
-- **Component Reusability**: DRY (Don't Repeat Yourself) methodology
-- **State Immutability**: Proper React state management patterns
-- **Separation of Concerns**: Clear distinction between UI and business logic
-- **Performance Optimization**: Minimized unnecessary re-renders
-
----
-
-## 🔗 Links
-
-- **Live Application**: [https://simple-todo-list-8n2q.vercel.app](https://simple-todo-list-8n2q.vercel.app)
-- **Repository**: [https://github.com/MatheusAraj/simple-todo-list](https://github.com/MatheusAraj/simple-todo-list)
+* **Clean Code**: Readable and semantic code.
+* **DRY (Don't Repeat Yourself)**: Logical redundancy minimization through generic components.
+* **Immutability**: State integrity guaranteed through non-destructive update patterns.
+* **Separation of Concerns (SoC)**: Clear division between business logic and visual presentation.
 
 ---
 
-## 👨‍💻 Author
+## Contact and Repository
 
-**Matheus Araujo**
-
-- GitHub: [@MatheusAraj](https://github.com/MatheusAraj)
+* **Application**: [https://simple-todo-list-8n2q.vercel.app](https://simple-todo-list-8n2q.vercel.app)
+* **Developer**: [Matheus Araujo](https://github.com/MatheusAraj)
 
 ---
 
 <div align="center">
-  <sub>Built with ⚛️ React and deployed on Vercel</sub>
+<sub>Developed under modern software engineering standards with React.</sub>
 </div>
